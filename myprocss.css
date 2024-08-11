@@ -27,8 +27,8 @@ ul {
   list-style-type: none;
   margin-top: 30px;
   padding: 0;
-  margin-right: 0;
   font-size: 17px;
+  float: right; /* This line positions the menu to the right */
 }
 
 ul li {
