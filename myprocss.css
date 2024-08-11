@@ -1,120 +1,143 @@
 {
-    margin: 0;
-    padding: 0;
-    font-family: Century;
+  margin: 0;
+  padding: 0;
+  font-family: Century;
 }
 
 body {
-    background-image: url('https://images.barrons.com/im-86071?width=1280&size=1.77777778');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    min-height: 100px;
-    color: #F8F8FF; /* Lavender white for text */
+  background-image: url('https://images.barrons.com/im-86071?width=1280&size=1.77777778');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  color: #F5F5F5;
 }
 
 button {
-    padding: 8px 12px;
-    background-color: #9370DB; /* Medium purple */
-    color: #F8F8FF; /* Light color for contrast */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 5px;
+  padding: 8px 12px;
+  background-color: #967BB6;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 ul {
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-    min-height: 400px;
-    margin-right: 40px;
-    font-size: 17px;
+  list-style-type: none;
+  margin-top: 30px;
+  padding: 0;
+  margin-right: 0;
+  font-size: 17px;
 }
 
 ul li {
-    display: inline-block;
-    position: relative; /* Necessary for positioning dropdown */
+  display: inline-block;
+  position: relative;
 }
 
 ul li a {
-    text-decoration: none;
-    color: #F8F8FF; /* Light color */
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: background-color 0.5s ease;
+  text-decoration: none;
+  color: #F5F5F5;
+  padding: 10px 20px;
+  border: none;
+  background-color: #E6E6FA;
+  transition: background-color 0.5s ease;
 }
 
 ul li a:hover {
-    background-color: #8A2BE2; /* Blue violet */
-    color: #FFFFFF; /* White for better contrast */
+  background-color: #967BB6;
+  color: #FFFFFF;
 }
 
 ul li.active {
-    background-color: #9370DB; /* Medium purple */
-    color: #FFFFFF; /* White */
+  background-color: #D8BFD8;
+  color: #FFFFFF;
 }
 
 .logo img {
-    float: left;
-    width: 100px;
-    height: auto;
+  float: left;
+  width: 100px;
+  height: auto;
 }
 
 .main {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .title {
-    position: absolute;
-    top: 47%;
-    left: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
 }
 
 .title h1 {
-    color: #FFFFFF; /* White */
-    font-size: 70px;
+  color: #FFFFFF;
+  font-size: 70px;
 }
 
-/* Styles for the dropdown */
 .sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* No gap between parent and dropdown */
-    left: 0;
-    background-color: #D8BFD8; /* Thistle */
-    border: 1px solid #9370DB; /* Medium purple border */
-    padding: 10px;
-    z-index: 999;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #967BB6;
+  border: 1px solid #806C9E;
+  padding: 10px;
+  z-index: 999;
 }
 
 ul li:hover .sub-menu {
-    display: block;
+  display: block;
 }
 
 .sub-menu li {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .sub-menu li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #4B0082; /* Indigo text */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #F5F5F5;
 }
 
 .sub-menu li a img {
-    width: 50px; /* Adjust image width as needed */
-    height: auto;
-    margin-right: 10px;
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
-/* Ensure the dropdown remains visible when hovered */
 ul li:hover > .sub-menu,
 .sub-menu:hover {
-    display: block;
+  display: block;
 }
 
-/*
+ul ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #806C9E;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #967BB6;
+}
+
+ul ul.sub-menu li {
+  display: block;
+  padding: 2px 2px;
+}
+
+ul ul.sub-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+ul ul.sub-menu a:hover {
+  background-color: #4169E1;
+}
