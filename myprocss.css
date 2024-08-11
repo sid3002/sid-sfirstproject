@@ -80,7 +80,7 @@ ul li.active {
 .sub-menu {
     display: none;
     position: absolute;
-    top: 100%; /* Position it directly below the parent */
+    top: 100%; /* Ensure dropdown is directly below parent */
     left: 0;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -88,7 +88,7 @@ ul li.active {
     padding: 10px;
 }
 
-ul li:hover .sub-menu {
+ul li:hover > .sub-menu {
     display: block;
 }
 
@@ -108,10 +108,6 @@ ul li:hover .sub-menu {
     width: 50px;
     height: auto;
     margin-right: 10px;
-}
-
-.main ul li:hover .sub-menu {
-    display: block;
 }
 
 ul ul.sub-menu {
@@ -141,4 +137,15 @@ ul ul.sub-menu a:hover {
 
 ul li:hover > ul.sub-menu {
     display: block;
+}
+
+/* Ensure sub-menu stays open when hovering */
+ul li:hover > .sub-menu, .sub-menu:hover {
+    display: block;
+}
+
+/* Adjust padding and margin to remove any gaps */
+.sub-menu {
+    margin-top: 0;
+    padding-top: 0;
 }
