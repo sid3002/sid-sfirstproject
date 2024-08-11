@@ -10,13 +10,13 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100px;
-    color: #F5F5F5; /* Light color for text */
+    color: #F8F8FF; /* Lavender white for text */
 }
 
 button {
     padding: 8px 12px;
-    background-color: #6A5ACD; /* Slate blue */
-    color: #F5F5F5; /* Light color for contrast */
+    background-color: #9370DB; /* Medium purple */
+    color: #F8F8FF; /* Light color for contrast */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -39,19 +39,19 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #F5F5F5; /* Light color */
+    color: #F8F8FF; /* Light color */
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: background-color 0.5s ease;
 }
 
 ul li a:hover {
-    background-color: #483D8B; /* Darker shade of blue */
+    background-color: #8A2BE2; /* Blue violet */
     color: #FFFFFF; /* White for better contrast */
 }
 
 ul li.active {
-    background-color: #4169E1; /* Royal blue */
+    background-color: #9370DB; /* Medium purple */
     color: #FFFFFF; /* White */
 }
 
@@ -83,8 +83,8 @@ ul li.active {
     position: absolute;
     top: 100%; /* No gap between parent and dropdown */
     left: 0;
-    background-color: #6A5ACD; /* Slate blue */
-    border: 1px solid #483D8B; /* Darker border for contrast */
+    background-color: #D8BFD8; /* Thistle */
+    border: 1px solid #9370DB; /* Medium purple border */
     padding: 10px;
     z-index: 999;
 }
@@ -102,7 +102,7 @@ ul li:hover .sub-menu {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #F5F5F5; /* Light text color */
+    color: #4B0082; /* Indigo text */
 }
 
 .sub-menu li a img {
@@ -117,30 +117,4 @@ ul li:hover > .sub-menu,
     display: block;
 }
 
-/* Nested dropdowns */
-ul ul.sub-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #483D8B; /* Darker blue for nested dropdown */
-    z-index: 999;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #6A5ACD; /* Lighter border */
-}
-
-ul ul.sub-menu li {
-    display: block;
-    padding: 2px 2px;
-}
-
-ul ul.sub-menu a {
-    color: #FFFFFF; /* White text for contrast */
-    text-decoration: none;
-    display: block;
-}
-
-ul ul.sub-menu a:hover {
-    background-color: #4169E1; /* Royal blue */
-}
+/*
