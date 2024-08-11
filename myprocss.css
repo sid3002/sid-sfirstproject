@@ -47,7 +47,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: rgb(138, 43, 226);
+    background-color: rgb(174, 116, 228);
     color: azure;
 }
 
@@ -114,11 +114,11 @@ ul li:hover > .sub-menu {
 ul ul.sub-menu {
     display: none;
     position: absolute;
-    background-color: #f326ae;
+    background-color: #bc70e5;
     z-index: 999;
     padding: 0;
     margin: 0;
-    border: 0.5px solid rgb(194, 32, 209);
+    border: 0.5px solid rgb(237, 159, 245);
 }
 
 ul ul.sub-menu li {
@@ -133,7 +133,7 @@ ul ul.sub-menu a {
 }
 
 ul ul.sub-menu a:hover {
-    background-color: #f326ae;
+    background-color: #bc70e5;
 }
 
 ul li:hover > ul.sub-menu {
